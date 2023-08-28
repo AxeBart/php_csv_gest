@@ -1,0 +1,62 @@
+
+.navigation {
+    color: while;
+    background-color: #082f4e;
+}
+
+#app{
+  height: 80vh;
+  /* border: solid black 1px; */
+  /* overflow-y: scroll; */
+  overflow: hidden;
+}
+
+.scroll{
+  overflow-y: scroll;
+  /* border: solid black 1px; */
+  height: 60vh;
+}
+.scroll::-webkit-scrollbar {
+  background-color: rgb(8, 47, 78);
+  border-radius: 20px;
+  width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb{
+  border-radius: 50px;
+  background-color: rgb(16, 88, 148);
+}
+/* waves */
+body
+{
+  overflow-x:hidden;
+  height: 100%;
+  /* background-color: rgb(235, 233, 255); */
+}
+
+.ocean {
+    background: rgb(8, 47, 78);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave {
+    background: url("../svg/wave.svg") repeat-x; 
+    position: absolute;
+    /* top: -198px; */
+    bottom: 0;
+    width: 6400px;
+    height: 100px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
